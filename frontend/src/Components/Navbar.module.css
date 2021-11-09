@@ -1,0 +1,31 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+}
+
+.ash {
+  height: 25px;
+  background-color: rgb(233, 233, 233);
+  color: rgb(148, 149, 139);
+  font-family: Questrial, sans-serif;
+  font-size: 8.96px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+}
+
+.text {
+  text-decoration: none;
+  color: #656565;
+}
+
+.headings {
+  display: grid;
+  grid-template-columns: repeat(5, 22%);
+  width: 400px;
+  margin-left: 350px;
+  font-size: 8.96px;
+  font-family: Questrial, sans-serif;
+}

@@ -1,0 +1,64 @@
+.block {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 30px;
+}
+.quantityDiv * {
+  box-sizing: border-box;
+}
+.quantityDiv button {
+  background: none;
+  border: none;
+}
+.quantityDiv span,
+.quantityDiv button {
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid rgb(139, 139, 143);
+}
+
+.image {
+  height: 600px;
+  width: 600px;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: repeat(3, 23%);
+  font-family: Questrial, sans-serif;
+  font-size: 8.96px;
+  color: rgb(139, 139, 143);
+}
+
+.box2 {
+  color: rgb(139, 139, 143);
+  font-family: Questrial, sans-serif;
+  font-size: 12px;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.proname {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.bt {
+  height: 40px;
+  width: 320px;
+  color: rgb(139, 139, 143);
+  border-block-end-color: 656565;
+  background-color: white;
+  font-size: 11px;
+}
+
+.select {
+  height: 40px;
+  width: 320px;
+  color: rgb(139, 139, 143);
+  border: none;
+  border-bottom: 1px solid #656565;
+  background-color: white;
+  font-size: 16px;
+  text-align: center;
+}
