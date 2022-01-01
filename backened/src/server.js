@@ -7,8 +7,12 @@ const productController = require('./controller/productController');
 const cartController = require('./controller/cartController');
 
 const app = express();
+require("dotenv").config();
+
 app.use(cors());
 app.use(express.json());
+const port = process.env.PORT || 1234;
+
 
 // app.post("/signup", signup);
 // app.post("/signin", signin);
@@ -18,7 +22,7 @@ app.use('/cart', cartController);
 
 const start = async () => {
   await connect();
-  app.listen(1234, () => {
+  app.listen(port, () => {
     console.log("listing to port 1234");
   });
 };
