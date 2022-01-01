@@ -10,9 +10,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post("/signup", signup);
-app.post("/signin", signin);
-
+// app.post("/signup", signup);
+// app.post("/signin", signin);
+app.use('/users',require("./controller/user.controller"))
 app.use('/prod', productController);
 app.use('/cart', cartController);
 

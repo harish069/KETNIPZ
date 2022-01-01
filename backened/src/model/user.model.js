@@ -3,8 +3,9 @@ const mongoose = require("mongoose");
 /////Log In////////////////////
 const userSchema = new mongoose.Schema(
   {
-    email: { type: String, required: true, unique: true },
-    password: { type: String, required: true, minLength: 8 },
+    name: {type: String, required: false},
+    email: { type: String, required: false},
+    password: { type: String, required: false },
   },
   { timestamps: true }
 );

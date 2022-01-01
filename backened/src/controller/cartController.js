@@ -27,6 +27,7 @@ router.post("/", async function (req, res) {
 router.get("/", async function (req, res) {
     try{
         const prod = await Cart.find().populate("productId").lean().exec();
+       // console.log(prod,"products in get")
         return res.status(200).send(prod);
     } catch (err) {
         return res.status(400).send(err.message);
@@ -50,9 +51,15 @@ router.get("/:id", async function (req, res) {
 // delete /prod/:id
 router.delete("/:id", async function (req, res) {
     try {
-        const user = await Cart.findByIdAndDelete(req.params.id).lean();
-     return res.status(200).send(user);
-    } catch {
+        const cartBeforeDelete=await Cart.find().lean().exec()
+        const cart = await Cart.findByIdAndDelete(req.params.id).lean();
+        const cartAfterdelete=await Cart.find().lean().exec()
+  
+        console.log("cart delete ",cartBeforeDelete,cartAfterdelete)
+  //  console.log(cart,"products in get")
+     return res.status(200).send(cart);       
+
+    } catch(err) {
         return res.status(400).send(err.message);
     }
     
