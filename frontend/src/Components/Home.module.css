@@ -4,12 +4,13 @@
 
 .dresses {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(4, 24%);
-  grid-gap: 15px;
+  grid-gap: 5px;
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 8%;
+  /* padding: 8%; */
   font-family: Questrial, sans-serif;
   font-size: 8.96px;
   font-weight: 600;

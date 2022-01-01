@@ -5,9 +5,10 @@
   font-size: 16px;
   color: rgb(139, 139, 143);
 }
+
 .line2 {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(6, 17%);
   height: 50px;
   width: 1000px;
   margin: auto;
@@ -18,7 +19,7 @@
 
 .line3 {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(6, 18%);
   border: none;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -66,4 +67,12 @@
   display: inline-block;
   padding: 3px 10px;
   border: 1px solid rgb(139, 139, 143);
+}
+
+.del {
+  background-color: white;
+  border-radius: 5px;
+  width: 100px;
+  color: rgb(139, 139, 143);
+  border-color: 1px solid rgb(139, 139, 143);
 }

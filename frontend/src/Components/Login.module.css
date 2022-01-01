@@ -1,0 +1,23 @@
+input {
+  height: 30px;
+  width: 300px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.button1 {
+  height: 30px;
+  width: 310px;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  background-color: rgb(101, 101, 101);
+}
+
+.create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(101, 101, 101);
+  font-size: 10px;
+}

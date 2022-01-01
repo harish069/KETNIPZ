@@ -1,0 +1,54 @@
+.mainCont {
+  font-style: normal;
+  font-family: Questrial, sans-serif !important;
+  /* width: 100%; */
+  height: 20rem;
+  font-size: 0.6rem;
+  padding: 2.6rem;
+
+  margin-top: 2rem;
+  background-color: #ffcee3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mainDiv {
+  font-style: normal;
+  font-family: Questrial, sans-serif !important;
+
+  margin-top: 2rem;
+  background-color: #ffcee3;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.line {
+  border-bottom: 1px solid black;
+  width: 22rem;
+}
+.footer_inp {
+  width: 21rem;
+  height: 3rem;
+}
+.belowfirst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.belowImg {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}

@@ -8,6 +8,7 @@ import Cart from "./Cart";
 import SingleProduct from './SingleProduct';
 import Login from './Login';
 import SignUp from './SignUp';
+import CheckOut from './CheckOut';
 
 function Routes() {
     return (
@@ -22,7 +23,8 @@ function Routes() {
                 <Route exact path="/cart"><Cart /></Route>
                 <Route path="/product/cart"><Cart /></Route>
                 <Route path="/login"><Login /></Route>
-                <Route path="/signup"><SignUp/></Route>
+                <Route path="/signup"><SignUp /></Route>
+                <Route path ="/checkout"><CheckOut/></Route>
             <Route>404 page not found</Route>
             </Switch>
         </div>
