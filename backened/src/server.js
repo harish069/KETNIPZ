@@ -23,7 +23,7 @@ app.use('/cart', cartController);
 const start = async () => {
   await connect();
   app.listen(port, () => {
-    console.log("listing to port 1234");
+    console.log("listing to port", port);
   });
 };
 
